@@ -1,13 +1,13 @@
 ---
 layout: default
 modal-id: 1
-title: POST 1!
+title: Why?
 date: 2023-04-26
 img: post1_logo.png
 graph: graph1.jpeg
 alt: image-alt
 project-date: April 2023
-client: Start Bootstrap
-category: Web Development
+client: 
+category: 
 description: Post1- Why this dataset. Explanation of why we have chosen this dataset, Traffic Accidents in Madrid
 ---
