@@ -1,6 +1,6 @@
 # Site settings
 title: Traffic in Madrid
-#subtitle:"..."
+subtitle: "..."
 email: s230221@dtu.dk
 url: https://github.com/jeromelachaud/freelancer-theme
 description: "This is a website that analyses the traffic accidents in Madrid between 2019 and 2023."
