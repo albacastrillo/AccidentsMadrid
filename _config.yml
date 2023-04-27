@@ -60,10 +60,15 @@ address:
   
 # Numbers and names
 dtu_numbers: 
-  - line: Eliot Roger Jo Ullmo ............................. s223431
-  - line: Alba Castrillo Perote ............................ s230221
-  - line: María Norma Henríquez Serrano .... s221646
-
+  - line: s223431
+  - line: s230221
+  - line: s221646
+  
+dtu_names:
+  - line: Eliot Roger Jo Ullmo 
+  - line: Alba Castrillo Perote
+  - line: María Norma Henríquez Serrano
+  
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
 
