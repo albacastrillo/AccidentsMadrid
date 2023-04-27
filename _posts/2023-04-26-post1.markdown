@@ -3,6 +3,7 @@ layout: default
 modal-id: 1
 date: 2023-04-26
 img: post_logo.png
+graph: graph1.jpeg
 alt: image-alt
 project-date: April 2023
 client: Start Bootstrap
