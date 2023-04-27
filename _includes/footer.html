@@ -12,25 +12,23 @@
           </p>
         </div>
         <div class="footer-col col-md-6">
-          <footer-col class="text-center">
-            <div class="footer-col-above">
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6">
-                    <h3>{{ site.footer.by }}</h3>
-                    <p>
-                      {% for name in site.dtu_names %}
-                      {{ name.line }} <br>
-                      {% endfor %}
-                    </p>
-                  </div>
-                  <div class="col-md-6">
-                    <p>
-                      {% for number in site.dtu_numbers %}
-                      {{ number.line }} <br>
-                      {% endfor %}
-                    </p>
-                  </div>
+          <div class="footer-col-above">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h3>{{ site.footer.by }}</h3>
+                  <p>
+                    {% for name in site.dtu_names %}
+                    {{ name.line }} <br>
+                    {% endfor %}
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p>
+                    {% for number in site.dtu_numbers %}
+                    {{ number.line }} <br>
+                    {% endfor %}
+                  </p>
                 </div>
               </div>
             </div>
