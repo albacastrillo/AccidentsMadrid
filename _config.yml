@@ -1,11 +1,13 @@
 # Site settings
 title: Traffic in Madrid
+#subtitle:"..."
 email: s230221@dtu.dk
 url: https://github.com/jeromelachaud/freelancer-theme
-description: "This is a website that analyses the traffic accidents in Madrid between 2019 and 2023.."
+description: "This is a website that analyses the traffic accidents in Madrid between 2019 and 2023."
 keywords: "Accidents, traffic, Madrid"
 skills: "Web Developer - Graphic Artist - User Experience Designer"
 meta_author: Eliot, Alba and Norma
+#dtu_numbers: "s223431 - s230221 - s221646"
 
 # Google webmaster tools
 google_verify:
@@ -54,6 +56,12 @@ social:
 address:
   - line: Social Data Analysis
   - line: and Visualization
+  
+# Numbers and names
+dtu_numbers: 
+  - line: Eliot - s223431
+  - line: Alba Castrillo Perote - s230221
+  - line: Norma - s221646
 
 # Credits content
 credits: 'Freelancer is a free to use, open source Bootstrap theme created by <a href="http://startbootstrap.com">Start Bootstrap</a>.'
