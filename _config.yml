@@ -1,6 +1,6 @@
 # Site settings
-title: Traffic in Madrid
-subtitle: "..."
+title: The Road to Change
+subtitle: "Analyzing Madrid's Traffic Accidents and Working Towards Safer Streets"
 email: s230221@dtu.dk
 url: https://github.com/jeromelachaud/freelancer-theme
 description: "This is a website that analyses the traffic accidents in Madrid between 2019 and 2023."
@@ -59,8 +59,8 @@ address:
   
 # Numbers and names
 dtu_numbers: 
-  - line: Eliot Roger Jo Ullmo ..................... s223431
-  - line: Alba Castrillo Perote .................... s230221
+  - line: Eliot Roger Jo Ullmo ........................ s223431
+  - line: Alba Castrillo Perote ....................... s230221
   - line: María Norma Henríquez Serrano .... s221646
 
 # Credits content
