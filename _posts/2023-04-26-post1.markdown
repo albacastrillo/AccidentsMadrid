@@ -1,8 +1,9 @@
 ---
 layout: default
 modal-id: 1
+title: POST 1!
 date: 2023-04-26
-img: post_logo.png
+img: post1_logo.png
 graph: graph1.jpeg
 alt: image-alt
 project-date: April 2023
