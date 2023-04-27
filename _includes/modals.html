@@ -15,22 +15,10 @@
           <div class="modal-body">
             <h2>{{ post.title }}</h2>
             <hr class="star-primary">
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <img src="/path/to/{{ post.graph }}" class="img-responsive" alt="{{ page.alt }}">
-          </div>
-          <div class="col-md-8">
+            <img src="img/portfolio/{{ post.graph }}" class="img-responsive img-centered" alt="{{ post.alt }}">
             {% if post.description %}
             <p>{{ post.description }}</p>
             {% endif %}
-          </div>
-        </div>
-       </div>
-
-       <div class="row">
-          <div class="col-md-6">
             <ul class="list-inline item-details">
               {% if post.client %}
               <li>Client:
