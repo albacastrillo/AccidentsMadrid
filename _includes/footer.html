@@ -11,9 +11,13 @@
             {% endfor %}
           </p>
         </div>
-        <div class="footer-col col-md-6 text-center">
+        <div class="footer-col col-md-6">
+          <footer-col class="text-center">
+            <div class="footer-col-above">
+              <div class="container">
+          
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
               <h3>{{ site.footer.by }}</h3>
               <p>
                 {% for name in site.dtu_names %}
@@ -21,7 +25,7 @@
                 {% endfor %}
               </p>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-4">
               <p>
                 {% for number in site.dtu_numbers %}
                 {{ number.line }} <br>
