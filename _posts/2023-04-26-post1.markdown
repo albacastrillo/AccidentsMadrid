@@ -11,3 +11,13 @@ client:
 category: 
 description: Post1- Why this dataset. Explanation of why we have chosen this dataset, Traffic Accidents in Madrid
 ---
+
+<div class="row">
+  <div class="col-md-6">
+    <img src="/path/to/{{ page.graph }}" class="img-responsive" alt="{{ page.alt }}">
+  </div>
+  <div class="col-md-8">
+    <h2>{{ page.title }}</h2>
+    <p>{{ page.description }}</p>
+  </div>
+</div>
