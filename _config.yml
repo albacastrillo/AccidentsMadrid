@@ -33,7 +33,7 @@ color:
 # Footer settings
 footer:
   copyright: Eliot, Alba and Norma
-  location: Location
+  location: DTU
   social: Around the Web
   credits: Credits
 
@@ -52,7 +52,6 @@ social:
 
 # Postal address (add as many lines as necessary)
 address:
-  - line: DTU
   - line: Social Data Analysis
   - line: and Visualization
 
