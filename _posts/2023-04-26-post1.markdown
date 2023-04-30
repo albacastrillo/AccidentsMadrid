@@ -5,7 +5,7 @@ title: Why this dataset?
 date: 2023-04-18
 img: post1_logo.png
 graph1: graph1.jpeg 
-graph2: graph1.jpeg
+graph2: bokeh.html
 interactive: 
 alt: image-alt
 project-date: April 2023
