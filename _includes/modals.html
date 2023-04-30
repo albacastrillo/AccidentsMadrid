@@ -10,9 +10,22 @@
     </div>
     <div class="container">
       <div class="row">
+        {% if post.graph %}
+        {% if post.graph | size == 1 %}
         <div class="col-md-6">
           <img src="img/portfolio/{{ post.graph }}" class="img-responsive" alt="{{ post.alt }}">
         </div>
+        {% elsif post.graph | size == 2 %}
+        <div class="col-md-6">
+          <img src="img/portfolio/{{ post.graph[0] }}" class="img-responsive" alt="{{ post.alt[0] }}">
+          <img src="img/portfolio/{{ post.graph[1] }}" class="img-responsive" alt="{{ post.alt[1] }}">
+        </div>
+        {% else %}
+        <div class="col-md-6">
+          {% include interactive.html %}
+        </div>
+        {% endif %}
+        {% endif %}
         <div class="col-md-6">
           <div class="modal-body">
             <h2 class="text-center">{{ post.title }}</h2>
