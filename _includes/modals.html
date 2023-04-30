@@ -1,61 +1,87 @@
 <!-- Portfolio Modals -->
 {% for post in site.posts %}
-<div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
-  <div class="modal-content">
-    <div class="close-modal" data-dismiss="modal">
-      <div class="lr">
-        <div class="rl">
+  <div class="portfolio-modal modal fade" id="portfolioModal-{{ post.modal-id }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-content">
+      <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+          <div class="rl">
+          </div>
         </div>
       </div>
-    </div>
-    <div class="container">
-      <div class="row">
-        {% if post.graph %}
-        {% if post.graph | size == 1 %}
-        <div class="col-md-6">
-          <img src="img/portfolio/{{ post.graph }}" class="img-responsive" alt="{{ post.alt }}">
-        </div>
-        {% elsif post.graph | size == 2 %}
-        <div class="col-md-6">
-          <img src="img/portfolio/{{ post.graph[0] }}" class="img-responsive" alt="{{ post.alt[0] }}">
-          <img src="img/portfolio/{{ post.graph[1] }}" class="img-responsive" alt="{{ post.alt[1] }}">
-        </div>
-        {% else %}
-        <div class="col-md-6">
-          {% include interactive.html %}
-        </div>
-        {% endif %}
-        {% endif %}
-        <div class="col-md-6">
-          <div class="modal-body">
-            <h2 class="text-center">{{ post.title }}</h2>
-            <hr class="star-primary">
-            {% if post.description %}
-            <p>{{ post.description }}</p>
-            {% endif %}
-            <ul class="list-inline item-details">
-              {% if post.client %}
-              <li>Client:
-                <strong>{{ post.client }}</strong>
-              </li>
+      <div class="container">
+        <div class="row">
+          {% if post.graph1 %}
+            <div class="col-md-6">
+              <img src="img/portfolio/{{ post.graph1 }}" class="img-responsive" alt="{{ post.alt }}">
+              {% if post.graph2 %}
+                <img src="img/portfolio/{{ post.graph2 }}" class="img-responsive" alt="{{ post.alt }}">
               {% endif %}
-              {% if post.project-date %}
-              <li>Date:
-                <strong>{{ post.project-date }}</strong>
-              </li>
-              {% endif %}
-              {% if post.category %}
-              <li>Service:
-                <strong>{{ post.category }}</strong>
-              </li>
-              {% endif %}
-            </ul>
-            <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
-              Close</button>
-          </div>
+            </div>
+            <div class="col-md-6">
+              <div class="modal-body">
+                <h2 class="text-center">{{ post.title }}</h2>
+                <hr class="star-primary">
+                {% if post.description %}
+                  <p>{{ post.description }}</p>
+                {% endif %}
+                <ul class="list-inline item-details">
+                  {% if post.client %}
+                    <li>Client:
+                      <strong>{{ post.client }}</strong>
+                    </li>
+                  {% endif %}
+                  {% if post.project-date %}
+                    <li>Date:
+                      <strong>{{ post.project-date }}</strong>
+                    </li>
+                  {% endif %}
+                  {% if post.category %}
+                    <li>Service:
+                      <strong>{{ post.category }}</strong>
+                    </li>
+                  {% endif %}
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          {% else %}
+            <div class="col-md-12">
+              <div class="modal-body">
+                <h2 class="text-center">{{ post.title }}</h2>
+                <hr class="star-primary">
+                {% if post.graph2 %}
+                  <div class="col-md-6 col-md-offset-3">
+                    <img src="img/portfolio/{{ post.graph2 }}" class="img-responsive" alt="{{ post.alt }}">
+                  </div>
+                {% endif %}
+                {% if post.description %}
+                  <p>{{ post.description }}</p>
+                {% endif %}
+                <ul class="list-inline item-details">
+                  {% if post.client %}
+                    <li>Client:
+                      <strong>{{ post.client }}</strong>
+                    </li>
+                  {% endif %}
+                  {% if post.project-date %}
+                    <li>Date:
+                      <strong>{{ post.project-date }}</strong>
+                    </li>
+                  {% endif %}
+                  {% if post.category %}
+                    <li>Service:
+                      <strong>{{ post.category }}</strong>
+                    </li>
+                  {% endif %}
+                </ul>
+                <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                  Close</button>
+              </div>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>
   </div>
-</div>
 {% endfor %}
