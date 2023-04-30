@@ -4,7 +4,9 @@ modal-id: 1
 title: Why this dataset?
 date: 2023-04-18
 img: post1_logo.png
-graph: graph1.jpeg
+graph1: graph1.jpeg 
+graph2: graph1.jpeg
+interactive: 
 alt: image-alt
 project-date: April 2023
 client: 
