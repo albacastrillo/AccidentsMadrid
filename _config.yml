@@ -60,9 +60,9 @@ address:
   
 # Numbers and names
 dtu_numbers: 
-  - line: s223431
-  - line: s230221
   - line: s221646
+  - line: s230221
+  - line: s223431
   
 dtu_names:
   - line: Eliot Roger Jo Ullmo 
