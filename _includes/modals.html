@@ -10,27 +10,21 @@
     </div>
     <div class="container">
       <div class="row">
-        {% if post.graph1 contains '.html' %}
         <div class="col-md-6">
-          <iframe src="img/portfolio/{{ post.graph1 }}" width="300%" height="600" frameborder="0" scrolling="no"></iframe>
-        </div>
-        {% elsif post.graph1 %}
-        <div class="col-md-6">
+          {% if post.graph1 contains '.html' %}
+          <iframe src="img/portfolio/{{ post.graph1 }}" width="200%" height="600" frameborder="0" scrolling="no"></iframe>
+          {% elsif post.graph1 %}
           <img src="img/portfolio/{{ post.graph1 }}" class="img-responsive" alt="{{ post.alt }}">
-        </div>
-        {% endif %}
-        {% if post.graph2 contains '.html' %}
-        <div class="col-md-6">
-          <iframe src="img/portfolio/{{ post.graph2 }}" width="200%" height="500" frameborder="0" scrolling="auto" style="max-width: 100%;"></iframe>
-        </div>
-        {% elsif post.graph2 %}
-        <div class="col-md-6">
+          {% endif %}
+          {% if post.graph2 contains '.html' %}
+          <iframe src="img/portfolio/{{ post.graph2 }}" width="200%" height="600" frameborder="0" scrolling="no"></iframe>
+          {% elsif post.graph2 %}
           <img src="img/portfolio/{{ post.graph2 }}" class="img-responsive" alt="{{ post.alt }}">
+          {% endif %}
         </div>
-        {% endif %}
         <div class="col-md-6">
           <div class="modal-body">
-            <h2 class="text-center">{{ post.title }}</h2>
+            <h2>{{ post.title }}</h2>
             <hr class="star-primary">
             {% if post.description %}
             <p>{{ post.description }}</p>
@@ -61,3 +55,4 @@
   </div>
 </div>
 {% endfor %}
+
