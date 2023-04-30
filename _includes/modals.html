@@ -17,9 +17,7 @@
           <img src="img/portfolio/{{ post.graph1 }}" class="img-responsive" alt="{{ post.alt }}">
           {% endif %}
           {% if post.graph2 contains '.html' %}
-          <div style="aspect-ratio: 16/9;">
-            <iframe src="img/portfolio/{{ post.graph2 }}" width="150%" height="500" frameborder="0" scrolling="auto" style="max-width: 100%;"></iframe>
-          </div>
+          <iframe src="img/portfolio/{{ post.graph2 }}" width="150%" height="550" frameborder="0" scrolling="auto" style="max-width: 100%;"></iframe>
           {% elsif post.graph2 %}
           <img src="img/portfolio/{{ post.graph2 }}" class="img-responsive" alt="{{ post.alt }}">
           {% endif %}
