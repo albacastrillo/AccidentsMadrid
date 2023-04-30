@@ -1,7 +1,7 @@
 ---
 layout: default
 modal-id: 8
-title: Drivers
+title: Let's talk about the drivers
 date: 2023-04-26
 img: post8_logo.png
 graph: 
@@ -9,5 +9,5 @@ alt: image-alt
 project-date: April 2023
 client: 
 category:
-description: Post 8 - drivers.
+description: Post 8 - Let's talk about the drivers.
 ---
