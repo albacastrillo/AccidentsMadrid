@@ -12,12 +12,12 @@
       <div class="row">
         <div class="col-md-6">
           {% if post.graph1 contains '.html' %}
-          <iframe src="img/portfolio/{{ post.graph1 }}" width="200%" height="600" frameborder="0" scrolling="no"></iframe>
+          <iframe src="img/portfolio/{{ post.graph1 }}" width="200%" height="400" frameborder="0" scrolling="no"></iframe>
           {% elsif post.graph1 %}
           <img src="img/portfolio/{{ post.graph1 }}" class="img-responsive" alt="{{ post.alt }}">
           {% endif %}
           {% if post.graph2 contains '.html' %}
-          <iframe src="img/portfolio/{{ post.graph2 }}" width="200%" height="600" frameborder="0" scrolling="no"></iframe>
+          <iframe src="img/portfolio/{{ post.graph2 }}" width="50%" height="400" frameborder="0" scrolling="no"></iframe>
           {% elsif post.graph2 %}
           <img src="img/portfolio/{{ post.graph2 }}" class="img-responsive" alt="{{ post.alt }}">
           {% endif %}
