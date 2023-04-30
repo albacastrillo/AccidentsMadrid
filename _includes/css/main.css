@@ -482,3 +482,12 @@ footer .footer-below {
     transform: translateZ(0);
     -webkit-transform: translateZ(0);
 }
+
+.column-1 {
+  width: 100%;
+}
+
+.bk-root {
+  width: 100%;
+}
+
