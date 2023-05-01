@@ -418,7 +418,7 @@ footer .footer-below {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: center;
+    text-align: justify;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -429,8 +429,12 @@ footer .footer-below {
     font-size: 3em;
 }
 
+.portfolio-modal .modal-content {
+    font-size: 16px;
+}
+
 .portfolio-modal .modal-content img {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 .portfolio-modal .modal-content .item-details {
