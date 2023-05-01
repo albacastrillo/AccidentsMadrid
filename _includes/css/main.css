@@ -472,13 +472,9 @@ footer .footer-below {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
+    display: block;
+    margin: 0 auto;
 }
-
-.close-button {
-  display: block;
-  margin: 0 auto;
-}
-
 
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
