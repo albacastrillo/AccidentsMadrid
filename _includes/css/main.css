@@ -474,6 +474,12 @@ footer .footer-below {
     transform: rotate(90deg);
 }
 
+.close-button {
+  display: block;
+  margin: 0 auto;
+}
+
+
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
