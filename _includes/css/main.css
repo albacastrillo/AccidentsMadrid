@@ -422,15 +422,13 @@ footer .footer-below {
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
+    font-size: 16px;
 }
 
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
-}
-
-.portfolio-modal .modal-content {
-    font-size: 16px;
+    text-align: center; 
 }
 
 .portfolio-modal .modal-content img {
