@@ -10,7 +10,8 @@ alt: image-alt
 project-date: April 2023
 client: 
 category: 
-description: Welcome to our website dedicated to analyzing Madrid accidents data! 
+description: |
+Welcome to our website dedicated to analyzing Madrid accidents data! 
   
 Our website provides a user-friendly interface for exploring a comprehensive dataset on traffic accidents that have occurred in Madrid from 2019 to 2023. By analyzing this data, you can gain insights into the causes and patterns of accidents, which can inform policy decisions and help to reduce the number of accidents in the future. 
   
