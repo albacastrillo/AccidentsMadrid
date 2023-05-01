@@ -60,6 +60,19 @@
             <!-- <button type="button" class="btn btn-primary pull-left"><i class="fa fa-arrow-left"></i> Previous</button> -->
             <!-- <button type="button" class="btn btn-primary pull-right"> Next <i class="fa fa-arrow-right"></i></button> -->
             
+            <div class="clearfix">
+
+              {% if post.previous.url %}
+              <a class="btn btn-primary pull-left" href="{{ post.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+                  Post</span></a>
+              {% endif %}
+              {% if post.next.url %}
+              <a class="btn btn-primary pull-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}">Next<span class="d-none d-md-inline">
+                  Post</span> &rarr;</a>
+              {% endif %}
+
+            </div>
+            
           </div>
           {% unless post.graph1 or post.graph2 %}
           </div>
