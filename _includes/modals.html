@@ -60,18 +60,21 @@
             <!-- <button type="button" class="btn btn-primary pull-left"><i class="fa fa-arrow-left"></i> Previous</button> -->
             <!-- <button type="button" class="btn btn-primary pull-right"> Next <i class="fa fa-arrow-right"></i></button> -->
             
-            <div class="clearfix">
-
-              {% if post.previous.url %}
-              <a class="btn btn-primary pull-left" href="{{ post.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-                  Post</span></a>
+           {% assign posts = site.posts | sort: 'modal-id' %}
+            {% for i in (0..posts.size) %}
+              {% if posts[i].modal-id == page.modal-id %}
+                {% assign prevIndex = i | minus: 1 %}
+                {% assign nextIndex = i | plus: 1 %}
+                <div class="clearfix">
+                  {% if prevIndex >= 0 %}
+                    <a class="btn btn-primary pull-left" href="{{ posts[prevIndex].url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ posts[prevIndex].title }}">&larr; Previous<span class="d-none d-md-inline"> Post</span></a>
+                  {% endif %}
+                  {% if nextIndex < posts.size %}
+                    <a class="btn btn-primary pull-right" href="{{ posts[nextIndex].url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ posts[nextIndex].title }}">Next<span class="d-none d-md-inline"> Post</span> &rarr;</a>
+                  {% endif %}
+                </div>
               {% endif %}
-              {% if post.next.url %}
-              <a class="btn btn-primary pull-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}">Next<span class="d-none d-md-inline">
-                  Post</span> &rarr;</a>
-              {% endif %}
-
-            </div>
+            {% endfor %}
             
           </div>
           {% unless post.graph1 or post.graph2 %}
