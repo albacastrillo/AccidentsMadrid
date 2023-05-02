@@ -9,14 +9,12 @@
       </div>
     </div>
     <div class="container">
-      
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2>{{ post.title }}</h2>
+          <h2 class="text-center">{{ post.title }}</h2>
           <hr class="star-primary">
         </div>
       </div>
-      
       <div class="row">
         {% if post.graph1 or post.graph2 %}
         <div class="col-md-6">
@@ -32,14 +30,11 @@
           {% endif %}
         </div>
         <div class="col-md-6">
-          {% else %}
-          <div class="col-md-12">
-          {% endif %}
           <div class="modal-body">
             {% if post.description %}
             {% assign paragraphs = post.description | newline_to_br | split: '<br />' %}
             {% for paragraph in paragraphs %}
-            <p style="{% unless post.graph1 or post.graph2 %}text-align:center;{% endunless %}">{{ paragraph }}</p>
+            <p>{{ paragraph }}</p>
             {% endfor %}
             {% endif %}
             <ul class="list-inline item-details">
@@ -59,7 +54,6 @@
               </li>
               {% endif %}
             </ul>
-            
             <div style="text-align: center;">
               <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
             </div>
