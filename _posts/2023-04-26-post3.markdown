@@ -8,8 +8,8 @@ graph1: heatmap.html
 graph2: bokeh.html
 alt: image-alt
 project-date: April 2023
-client: ""
-category: ""
+client: 
+category: 
 description: Imagine this - you're a passionate cyclist who loves to ride your bike around the beautiful city of Madrid. But you've always been a little nervous about the traffic, especially after hearing stories of accidents involving cyclists. You've always wondered - how common are these accidents? What are the causes? And how can they be prevented?
 
   Welcome to our in-depth analysis and visualization of traffic accidents in Madrid by bike, covering the four-year period from 2019 to 2023. As avid cyclists and advocates for road safety, we were inspired to take a closer look at this important issue and explore the data in order to better understand the patterns and trends of bicycle accidents in the city.
