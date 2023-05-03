@@ -30,12 +30,12 @@
                 {% assign posts = site.posts | sort: 'date' | reverse %}
                 {% assign current_post_index = forloop.index0 %}
                 {% if current_post_index > 0 %}
-                <a class="btn btn-primary pull-left" href="#portfolioModal-{{ posts[current_post_index - 1].modal-id }}" data-dismiss="modal">
+                <a class="btn btn-primary pull-left" href="#portfolioModal-{{ posts[current_post_index - 1].modal-id }}" data-toggle="modal">
                   <span class="fa fa-arrow-left"></span> Previous
                 </a>
                 {% endif %}
                 {% if current_post_index < posts.size - 1 %}
-                <a class="btn btn-primary pull-right" href="#portfolioModal-{{ posts[current_post_index + 1].modal-id }}" data-dismiss="modal">
+                <a class="btn btn-primary pull-right" href="#portfolioModal-{{ posts[current_post_index + 1].modal-id }}" data-toggle="modal">
                   Next <span class="fa fa-arrow-right"></span>
                 </a>
                 {% endif %}
