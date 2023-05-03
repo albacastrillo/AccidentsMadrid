@@ -25,22 +25,19 @@
             </ul>
             <div class="text-center">
               <div class="modal-buttons">
-                {% assign posts = site.posts | sort: 'modal-id' %}}
-                {% assign current_post_index = forloop.index0 %}
-                {% if current_post_index > 0 %}
-                <a type="button" class="btn btn-primary pull-left" href="#portfolioModal-{{ posts[current_post_index - 1].modal-id }}" data-dismiss="modal">
-                  <span class="fa fa-arrow-left"></span> Previous
-                </a>
+                {% if page.previous.url %}
+                <a type="button" class="btn btn-primary pull-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+                  </span></a>
                 {% endif %}
                 
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 
-                {% if current_post_index < posts.size - 1 %}
-                <a type="button" class="btn btn-primary pull-right" href="#portfolioModal-{{ posts[current_post_index + 1].modal-id }}" data-dismiss="modal">
-                  Next <span class="fa fa-arrow-right"></span>
-                </a>
+                {% if page.next.url %}
+                <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+                  </span> &rarr;</a>
                 {% endif %}
-              </div>
+              </div> 
+            
             </div>
           </div>
         </div>
