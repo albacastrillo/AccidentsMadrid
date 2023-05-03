@@ -17,7 +17,7 @@
             <hr class="star-primary">
             {{ post.content }}
             <ul class="list-inline item-details">
-              {% if post.project-date %}
+              {% if post.project-date %} 
               <li>Date:
                 <strong>{{ post.project-date }}</strong>
               </li>
@@ -25,17 +25,15 @@
             </ul>
             <div class="text-center">
               <div class="modal-buttons">
-                {% if post.previous.url %}
-                <a type="button" class="btn btn-primary pull-left" href="{{ post.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
-                  </span></a>
-                {% endif %}
+                <!-- {% if post.previous.url %} -->
+                <!-- <a type="button" class="btn btn-primary pull-left" href="{{ post.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.previous.title }}">&larr; Previous<span class="d-none d-md-inline"></span></a> -->
+                <!-- {% endif %} -->
                 
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 
-                {% if post.next.url %}
-                <a type="button" class="btn btn-primary pull-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}"> Next<span class="d-none d-md-inline">&rarr;
-                  </span></a>
-                {% endif %}
+                <!-- {% if post.next.url %} -->
+                <!-- <a type="button" class="btn btn-primary pull-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}"> Next<span class="d-none d-md-inline">&rarr;</span></a> -->
+                <!-- {% endif %} -->
               </div> 
             
             </div>
