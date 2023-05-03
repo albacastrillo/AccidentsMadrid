@@ -1,0 +1,10 @@
+<!-- Portfolio Modals -->
+{% for post in site.posts_html %}
+  <div class="post-preview">
+    <a href="{{ post.url | prepend: site.baseurl }}">
+      <h2 class="post-title">{{ post.title }}</h2>
+    </a>
+    <p class="post-meta"><strong>Posted on {{ post.date | date: "%B %d, %Y" }}</strong></p>
+    <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>Close</button>
+  </div>
+{% endfor %}
