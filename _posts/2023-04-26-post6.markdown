@@ -1,0 +1,13 @@
+---
+layout: default
+modal-id: 6
+title: Safety zones in Madrid
+date: 2023-04-26
+img: post6_logo.png
+graph:
+alt: image-alt
+project-date: April 2023
+client: 
+category:
+description: Post 6 - safety zones
+---
