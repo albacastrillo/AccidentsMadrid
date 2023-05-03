@@ -31,12 +31,12 @@
               {% assign current_post_index = forloop.index0 %}
               {% if current_post_index > 0 %}
               <a class="btn btn-primary btn-lg" href="#portfolioModal-{{ posts[current_post_index - 1].modal-id }}" data-dismiss="modal">
-                <span class="glyphicon glyphicon-chevron-left"></span> Previous Post
+                <span class="fa fa-arrow-left"></span> Previous
               </a>
               {% endif %}
               {% if current_post_index < posts.size - 1 %}
               <a class="btn btn-primary btn-lg" href="#portfolioModal-{{ posts[current_post_index + 1].modal-id }}" data-dismiss="modal">
-                Next Post <span class="glyphicon glyphicon-chevron-right"></span>
+                Next <span class="fa fa-arrow-right"></span>
               </a>
               {% endif %}
             </div>
