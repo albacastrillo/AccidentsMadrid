@@ -25,15 +25,15 @@
             </ul>
             <div class="text-center">
               <div class="modal-buttons">
-                {% if page.previous.url %}
-                <a type="button" class="btn btn-primary pull-left" href="{{ page.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
+                {% if post.previous.url %}
+                <a type="button" class="btn btn-primary pull-left" href="{{ post.previous.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.previous.title }}">&larr; Previous<span class="d-none d-md-inline">
                   </span></a>
                 {% endif %}
                 
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 
-                {% if page.next.url %}
-                <a class="btn btn-primary float-right" href="{{ page.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ page.next.title }}">Next<span class="d-none d-md-inline">
+                {% if post.next.url %}
+                <a class="btn btn-primary float-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}">Next<span class="d-none d-md-inline">
                   </span> &rarr;</a>
                 {% endif %}
               </div> 
