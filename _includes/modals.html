@@ -26,17 +26,17 @@
             <div class="text-center">
               <div class="modal-buttons">
                 {% assign posts = site.posts | sort: 'date' | reverse %}
-                {% assign current_post_index = forloop.index0 %}
-                {% if current_post_index > 0 %}
-                <a type="button" class="btn btn-primary pull-left" href="#portfolioModal-{{ posts[current_post_index - 1].modal-id }}" data-dismiss="modal">
+                {% assign {{ post.modal-id }} = forloop.index0 %}
+                {% if {{ post.modal-id }} > 0 %}
+                <a type="button" class="btn btn-primary pull-left" href="#portfolioModal-{{ posts[{{ post.modal-id }} - 1].modal-id }}" data-dismiss="modal">
                   <span class="fa fa-arrow-left"></span> Previous
                 </a>
                 {% endif %}
                 
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 
-                {% if current_post_index < posts.size - 1 %}
-                <a type="button" class="btn btn-primary pull-right" href="#portfolioModal-{{ posts[current_post_index + 1].modal-id }}" data-dismiss="modal">
+                {% if {{ post.modal-id }} < posts.size - 1 %}
+                <a type="button" class="btn btn-primary pull-right" href="#portfolioModal-{{ posts[{{ post.modal-id }} + 1].modal-id }}" data-dismiss="modal">
                   Next <span class="fa fa-arrow-right"></span>
                 </a>
                 {% endif %}
