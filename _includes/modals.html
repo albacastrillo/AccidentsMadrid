@@ -33,7 +33,7 @@
                 <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i> Close</button>
                 
                 {% if post.next.url %}
-                <a type="button" class="btn btn-primary float-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}">&rarr; Next<span class="d-none d-md-inline">
+                <a type="button" class="btn btn-primary pull-right" href="{{ post.next.url | prepend: site.baseurl | replace: '//', '/' }}" data-toggle="tooltip" data-placement="top" title="{{ post.next.title }}">&rarr; Next<span class="d-none d-md-inline">
                   </span></a>
                 {% endif %}
               </div> 
