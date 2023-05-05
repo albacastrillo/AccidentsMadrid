@@ -473,6 +473,11 @@ footer .footer-below {
     margin: 0 auto;
 }
 
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+}
+
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
