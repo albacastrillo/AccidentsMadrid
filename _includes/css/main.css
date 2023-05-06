@@ -425,6 +425,10 @@ footer .footer-below {
     margin: 0 auto;
 }
 
+.container {
+    max-width: 1200px; /* Increase the value as per your requirement */
+}
+
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
