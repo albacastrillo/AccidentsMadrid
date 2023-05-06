@@ -419,7 +419,9 @@ justify-content: center;
 }
 
 .portfolio-modal .modal-dialog {
-    max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .portfolio-modal .modal-content {
