@@ -418,6 +418,10 @@ display: flex;
 justify-content: center;
 }
 
+.portfolio-modal .modal-dialog {
+    max-width: 800px;
+}
+
 .portfolio-modal .modal-content {
     min-height: 100%;
     border: 0;
