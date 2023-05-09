@@ -425,6 +425,11 @@ footer .footer-below {
     margin: 0 auto;
 }
 
+.post-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .portfolio-modal .modal-content h2 {
     margin: 0;
     font-size: 3em;
