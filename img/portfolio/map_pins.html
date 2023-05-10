@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_41684ec4841aa98f28e3aa80af70292a {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_41684ec4841aa98f28e3aa80af70292a" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_41684ec4841aa98f28e3aa80af70292a = L.map(
+                "map_41684ec4841aa98f28e3aa80af70292a",
+                {
+                    center: [40.4168, -3.7038],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 14,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ffa1ac6ccf159319d367b46f833aaad9 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_41684ec4841aa98f28e3aa80af70292a);
+        
+    
+            var marker_3ba677f7cdfe068fa157a7506917e55b = L.marker(
+                [40.419353, -3.693752],
+                {}
+            ).addTo(map_41684ec4841aa98f28e3aa80af70292a);
+        
+    
+            var icon_f97272e38a33f2b811cad5ca52099a8d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_3ba677f7cdfe068fa157a7506917e55b.setIcon(icon_f97272e38a33f2b811cad5ca52099a8d);
+        
+    
+        var popup_91a5187d068d36d6fd0df5b58c33f023 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d95e9749166161fba9af7009c76d75fd = $(`<div id="html_d95e9749166161fba9af7009c76d75fd" style="width: 100.0%; height: 100.0%;">Plaza Cibeles</div>`)[0];
+                popup_91a5187d068d36d6fd0df5b58c33f023.setContent(html_d95e9749166161fba9af7009c76d75fd);
+            
+        
+
+        marker_3ba677f7cdfe068fa157a7506917e55b.bindPopup(popup_91a5187d068d36d6fd0df5b58c33f023)
+        ;
+
+        
+    
+    
+            var marker_05780b4449f9f5baa5e3014e3a410958 = L.marker(
+                [40.429545, -3.70558],
+                {}
+            ).addTo(map_41684ec4841aa98f28e3aa80af70292a);
+        
+    
+            var icon_910ce553f81de5ff5aa9aa5b77d7c5d2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "car", "iconColor": "white", "markerColor": "red", "prefix": "fa"}
+            );
+            marker_05780b4449f9f5baa5e3014e3a410958.setIcon(icon_910ce553f81de5ff5aa9aa5b77d7c5d2);
+        
+    
+        var popup_879366c7c5ce2ebc70537f840b588db1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39c6ac4715ab2ce6e1d079a8313dbfe5 = $(`<div id="html_39c6ac4715ab2ce6e1d079a8313dbfe5" style="width: 100.0%; height: 100.0%;">San Bernardo</div>`)[0];
+                popup_879366c7c5ce2ebc70537f840b588db1.setContent(html_39c6ac4715ab2ce6e1d079a8313dbfe5);
+            
+        
+
+        marker_05780b4449f9f5baa5e3014e3a410958.bindPopup(popup_879366c7c5ce2ebc70537f840b588db1)
+        ;
+
+        
+    
+    
+            var marker_6d99ef0fe6e7ba9ca5b3272525f62633 = L.marker(
+                [40.408703, -3.692087],
+                {}
+            ).addTo(map_41684ec4841aa98f28e3aa80af70292a);
+        
+    
+            var icon_7116a047fe6d21a1e9d8ee1aa6adc46f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "bicycle", "iconColor": "white", "markerColor": "green", "prefix": "fa"}
+            );
+            marker_6d99ef0fe6e7ba9ca5b3272525f62633.setIcon(icon_7116a047fe6d21a1e9d8ee1aa6adc46f);
+        
+    
+        var popup_ca72f3b51744093dc85046eea1ce8c68 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_09a847ea29b7f1c9db4f732eefe58a15 = $(`<div id="html_09a847ea29b7f1c9db4f732eefe58a15" style="width: 100.0%; height: 100.0%;">Estación del Arte</div>`)[0];
+                popup_ca72f3b51744093dc85046eea1ce8c68.setContent(html_09a847ea29b7f1c9db4f732eefe58a15);
+            
+        
+
+        marker_6d99ef0fe6e7ba9ca5b3272525f62633.bindPopup(popup_ca72f3b51744093dc85046eea1ce8c68)
+        ;
+
+        
+    
+</script>
+</html>
