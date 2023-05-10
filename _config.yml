@@ -83,4 +83,4 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: baseurl/:year/:month/:day/:title
+      permalink: /:year/:month/:day/:title
