@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Bokeh Plot</title>
+    <style>
+      html, body {
+        box-sizing: border-box;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+    <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-3.1.0.min.js"></script>
+    <script type="text/javascript">
+        Bokeh.set_log_level("info");
+    </script>
+  </head>
+  <body>
+    <div id="d5236492-1dd5-4c67-89db-3d43358e39a3" data-root-id="p3317" style="display: contents;"></div>
+  
+    <script type="application/json" id="p3497">
+      {"5c92d71f-a77f-4897-8a77-b56515d1755f":{"version":"3.1.0","title":"Bokeh Application","defs":[],"roots":[{"type":"object","name":"Figure","id":"p3317","attributes":{"height":350,"x_range":{"type":"object","name":"FactorRange","id":"p3327","attributes":{"factors":["2019","2020","2021","2022","2023"]}},"y_range":{"type":"object","name":"DataRange1d","id":"p3319","attributes":{"start":0,"end":42607}},"x_scale":{"type":"object","name":"CategoricalScale","id":"p3331"},"y_scale":{"type":"object","name":"LinearScale","id":"p3333"},"title":{"type":"object","name":"Title","id":"p3320","attributes":{"text":"Total Number of Accidents by Type of Victim and Year"}},"renderers":[{"type":"object","name":"GlyphRenderer","id":"p3370","attributes":{"data_source":{"type":"object","name":"ColumnDataSource","id":"p3314","attributes":{"selected":{"type":"object","name":"Selection","id":"p3316","attributes":{"indices":[],"line_indices":[]}},"selection_policy":{"type":"object","name":"UnionRenderers","id":"p3315"},"data":{"type":"map","entries":[["index",{"type":"ndarray","array":{"type":"bytes","data":"AAAAAAEAAAACAAAAAwAAAAQAAAAFAAAABgAAAAcAAAAIAAAACQAAAAoAAAALAAAADAAAAA0AAAAOAAAA"},"shape":[15],"dtype":"int32","order":"little"}],["year",{"type":"ndarray","array":["2019","2019","2019","2020","2020","2020","2021","2021","2021","2022","2022","2022","2023","2023","2023"],"shape":[15],"dtype":"object","order":"little"}],["type_of_person",{"type":"ndarray","array":["Driver","Passenger","Pedestrian","Driver","Passenger","Pedestrian","Driver","Passenger","Pedestrian","Driver","Passenger","Pedestrian","Driver","Passenger","Pedestrian"],"shape":[15],"dtype":"object","order":"little"}],["num_expediente",{"type":"ndarray","array":{"type":"bytes","data":"h6IAAMAgAAAaBwAAmWcAAL8SAABRBAAA+YMAAPkZAAA2BQAA0JQAAIccAABsBgAAnRgAAKkEAAArAQAA"},"shape":[15],"dtype":"int32","order":"little"}]]}}},"view":{"type":"object","name":"CDSView","id":"p3371","attributes":{"filter":{"type":"object","name":"AllIndices","id":"p3372"}}},"glyph":{"type":"object","name":"VBar","id":"p3367","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_expediente"},"line_color":{"type":"value","value":"white"},"fill_color":{"type":"field","field":"type_of_person","transform":{"type":"object","name":"CategoricalColorMapper","id":"p3363","attributes":{"palette":["#8c96c6","#9ebcda","#bfd3e6"],"factors":["Driver","Passenger","Pedestrian"]}}}}},"nonselection_glyph":{"type":"object","name":"VBar","id":"p3368","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_expediente"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.1},"fill_color":{"type":"field","field":"type_of_person","transform":{"id":"p3363"}},"fill_alpha":{"type":"value","value":0.1},"hatch_alpha":{"type":"value","value":0.1}}},"muted_glyph":{"type":"object","name":"VBar","id":"p3369","attributes":{"x":{"type":"field","field":"year"},"width":{"type":"value","value":0.9},"top":{"type":"field","field":"num_expediente"},"line_color":{"type":"value","value":"white"},"line_alpha":{"type":"value","value":0.2},"fill_color":{"type":"field","field":"type_of_person","transform":{"id":"p3363"}},"fill_alpha":{"type":"value","value":0.2},"hatch_alpha":{"type":"value","value":0.2}}}}}],"toolbar":{"type":"object","name":"Toolbar","id":"p3322","attributes":{"tools":[{"type":"object","name":"PanTool","id":"p3348"},{"type":"object","name":"WheelZoomTool","id":"p3349"},{"type":"object","name":"BoxZoomTool","id":"p3350","attributes":{"overlay":{"type":"object","name":"BoxAnnotation","id":"p3351","attributes":{"syncable":false,"level":"overlay","visible":false,"left_units":"canvas","right_units":"canvas","bottom_units":"canvas","top_units":"canvas","line_color":"black","line_alpha":1.0,"line_width":2,"line_dash":[4,4],"fill_color":"lightgrey","fill_alpha":0.5}}}},{"type":"object","name":"SaveTool","id":"p3352"},{"type":"object","name":"ResetTool","id":"p3353"},{"type":"object","name":"HelpTool","id":"p3354"},{"type":"object","name":"HoverTool","id":"p3373","attributes":{"renderers":"auto","tooltips":[["Year","@year"],["Type of Person","@type_of_person"],["Number of Accidents","@num_expediente"]]}}]}},"left":[{"type":"object","name":"LinearAxis","id":"p3341","attributes":{"ticker":{"type":"object","name":"BasicTicker","id":"p3343","attributes":{"mantissas":[1,2,5]}},"formatter":{"type":"object","name":"BasicTickFormatter","id":"p3342"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p3344"}}}],"below":[{"type":"object","name":"CategoricalAxis","id":"p3335","attributes":{"ticker":{"type":"object","name":"CategoricalTicker","id":"p3337"},"formatter":{"type":"object","name":"CategoricalTickFormatter","id":"p3336"},"major_label_policy":{"type":"object","name":"AllLabels","id":"p3338"}}}],"center":[{"type":"object","name":"Grid","id":"p3340","attributes":{"axis":{"id":"p3335"},"grid_line_color":null}},{"type":"object","name":"Grid","id":"p3347","attributes":{"dimension":1,"axis":{"id":"p3341"}}}]}}],"callbacks":{"type":"map"}}}
+    </script>
+    <script type="text/javascript">
+      (function() {
+        const fn = function() {
+          Bokeh.safely(function() {
+            (function(root) {
+              function embed_document(root) {
+              const docs_json = document.getElementById('p3497').textContent;
+              const render_items = [{"docid":"5c92d71f-a77f-4897-8a77-b56515d1755f","roots":{"p3317":"d5236492-1dd5-4c67-89db-3d43358e39a3"},"root_ids":["p3317"]}];
+              root.Bokeh.embed.embed_items(docs_json, render_items);
+              }
+              if (root.Bokeh !== undefined) {
+                embed_document(root);
+              } else {
+                let attempts = 0;
+                const timer = setInterval(function(root) {
+                  if (root.Bokeh !== undefined) {
+                    clearInterval(timer);
+                    embed_document(root);
+                  } else {
+                    attempts++;
+                    if (attempts > 100) {
+                      clearInterval(timer);
+                      console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                    }
+                  }
+                }, 10, root)
+              }
+            })(window);
+          });
+        };
+        if (document.readyState != "loading") fn();
+        else document.addEventListener("DOMContentLoaded", fn);
+      })();
+    </script>
+  </body>
+</html>
