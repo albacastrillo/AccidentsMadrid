@@ -3,7 +3,7 @@ title: The Road to Change
 subtitle: "Analyzing Madrid's Traffic Accidents and Working Towards Safer Streets"
 email: s230221@dtu.dk
 url: https://albacastrillo.github.io/AccidentsMadrid/
-baseurl: /AccidentsMadrid/
+baseurl: /AccidentsMadrid
 description: "This is a website that analyses the traffic accidents in Madrid between 2019 and 2023."
 keywords: "accidents, traffic, Madrid"
 skills: ""
