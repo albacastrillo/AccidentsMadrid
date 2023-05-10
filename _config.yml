@@ -83,4 +83,4 @@ defaults:
       path: ""
       type: "posts"
     values:
-      permalink: /AccidentsMadrid/:year/:month/:day/:title
+      permalink: ""
