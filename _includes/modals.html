@@ -15,7 +15,7 @@
           <div class="modal-body">
             <a href="{{ post.url | prepend: site.baseurl | replace: '//', '/' }}"><h2>{{ post.title }}</h2>
             <hr class="star-primary">
-            {{ post.content }}
+            {{ content }}
             <ul class="list-inline item-details">
               {% if post.project-date %} 
               <li>Date:
