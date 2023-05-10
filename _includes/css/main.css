@@ -418,16 +418,32 @@ footer .footer-below {
     min-height: 100%;
     border: 0;
     border-radius: 0;
-    text-align: justify;
+    text-align: center;
     background-clip: border-box;
     -webkit-box-shadow: none;
     box-shadow: none;
     margin: 0 auto;
 }
 
+
+.portfolio-modal .container mx-auto {
+    padding: 10px;
+    width: 100%;
+    min-height: 100%;
+    border: 0;
+    border-radius: 0;
+    text-align: center;
+    background-clip: border-box;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    margin: 0 auto;
+}
+
+
 .post-content {
   width: 100%;
   margin: 0 auto;
+  text-align: justify;
 }
 
 .portfolio-modal .modal-content h2 {
@@ -493,11 +509,4 @@ footer .footer-below {
     -webkit-transform: translateZ(0);
 }
 
-.column-1 {
-  width: 100%;
-}
-
-.bk-root {
-  width: 100%;
-}
 
