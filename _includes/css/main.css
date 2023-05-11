@@ -48,8 +48,13 @@ hr.star-primary {
     overflow: visible;
 }
 
-.container {
-  margin: 0 auto;
+@media (max-width: 767px) {
+  .container {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+}
+
 }
 
 hr.star-light:after,
