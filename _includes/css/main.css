@@ -6,7 +6,6 @@
 
 body {
     overflow-x: hidden;
-    margin: 0 auto;
 }
 
 p {
@@ -48,14 +47,6 @@ hr.star-primary {
     overflow: visible;
 }
 
-@media (max-width: 767px) {
-  .container {
-    margin: 0 auto;
-    max-width: 100%;
-  }
-}
-
-}
 
 hr.star-light:after,
 hr.star-primary:after {
