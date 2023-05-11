@@ -48,6 +48,10 @@ hr.star-primary {
     overflow: visible;
 }
 
+.container {
+  margin: 0 auto;
+}
+
 hr.star-light:after,
 hr.star-primary:after {
     content: "\2022";
