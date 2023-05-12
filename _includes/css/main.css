@@ -475,6 +475,14 @@ footer .footer-below {
   max-width: 100%;
 }
 
+#about a:link {
+  color: white;
+}
+
+#about a:hover {
+  color: white;
+}
+
 .navbar-nav>.active>a {
     background-color: #{{ site.color.secondary-dark }} !important;
 }
